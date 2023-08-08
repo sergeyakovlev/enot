@@ -1,0 +1,49 @@
+{
+    "authors": [
+        {
+            "name": "Serge Yakovlev",
+            "email": "serge.yakovlev@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        },
+        "sort-packages": true
+    },
+    "description": "Test Task",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "jetbrains/phpstorm-attributes": "*",
+        "phpstan/phpstan": "*",
+        "phpunit/phpunit": "*",
+        "psalm/attributes": "*",
+        "psalm/plugin-phpunit": "*",
+        "rector/rector": "*",
+        "roave/security-advisories": "dev-latest",
+        "squizlabs/php_codesniffer": "*",
+        "symplify/easy-coding-standard": "*",
+        "vimeo/psalm": "*"
+    },
+    "scripts": {
+        "analyze-phpstan": "vendor/bin/phpstan",
+        "analyze-psalm": "vendor/bin/psalm",
+        "cs": "vendor/bin/phpcs",
+        "cs-fix": "vendor/bin/phpcbf",
+        "test": "vendor/bin/phpunit"
+    },
+    "type": "project"
+}
